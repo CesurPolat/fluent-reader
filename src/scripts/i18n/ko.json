@@ -230,6 +230,7 @@
         "setPac": "PAC 설정",
         "pacHint": "Socks 프록시의 경우에는 PAC이 프록시측 DNS에 \"SOCKS5\"를 리턴하는 것을 권장합니다.. 재시작하려면 프록시를 종료해야 합니다.",
         "fetchInterval": "피드를 불러오는 간격",
-        "never": "하지 않음"
+        "never": "하지 않음",
+        "minimizeTray": "시스템 트레이로 최소화"
     }
 }

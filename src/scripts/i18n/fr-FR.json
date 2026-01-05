@@ -227,6 +227,7 @@
         "setPac": "Définir PAC",
         "pacHint": "Pour les proxies Sockets, il est recommandé que le PAC retourne \"SOCKS5\" pour le DNS côté proxies. La désactivation du proxy nécessite un redémarrage.",
         "fetchInterval": "Intervalle de récupération automatique",
-        "never": "Jamais"
+        "never": "Jamais",
+        "minimizeTray": "Minimiser dans la barre système"
     }
 }

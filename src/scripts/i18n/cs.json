@@ -237,6 +237,7 @@
         "setPac": "Nastavit PAC",
         "pacHint": "U proxy serverů Socks se doporučuje, aby PAC vracel \"SOCKS5\" pro DNS na straně proxy serveru. Vypnutí proxy vyžaduje restart.",
         "fetchInterval": "Automatický interval načítání",
-        "never": "Nikdy"
+        "never": "Nikdy",
+        "minimizeTray": "Minimalizovat do systémové lišty"
     }
 }

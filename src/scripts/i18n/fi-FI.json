@@ -26,7 +26,8 @@
         "pacHint": "Socks -välityspalvelimille on suositeltavaa asettaa PAC palauttamaan \"SOCKS5\" välityspalvelminen DNS:tä. Välityspalvelimen laittaminen pois päältä vaatii uudelleenkäynnistyksen,",
         "restore": "Palauta",
         "setPac": "Aseta PAC",
-        "theme": "Teema"
+        "theme": "Teema",
+        "minimizeTray": "Pienennä järjestelmäalustalle"
     },
     "article": {
         "dontNotify": "Älä ilmoita",

@@ -230,6 +230,7 @@
         "setPac": "Definir PAC",
         "pacHint": "For Socks proxies, it is recommended for PAC to return \"SOCKS5\" for proxy-side DNS. Turning off proxy requires restart.",
         "fetchInterval": "Intervalo de atualização automática",
-        "never": "Nunca"
+        "never": "Nunca",
+        "minimizeTray": "Minimizar para a bandeja do sistema"
     }
 }

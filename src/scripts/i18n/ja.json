@@ -230,6 +230,7 @@
         "setPac": "PACを設定",
         "pacHint": "Sockプロキシの場合にPACが“SOCKS5”を返すことをお勧めします。プロキシを停止してから再起動する必要があります。",
         "fetchInterval": "フェッチ間隔",
-        "never": "しない"
+        "never": "しない",
+        "minimizeTray": "タスクトレイに最小化する"
     }
 }

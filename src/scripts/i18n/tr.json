@@ -227,6 +227,7 @@
         "setPac": "PAC ayarla",
         "pacHint": "Socks proxy'leri için, PAC'ın proxy tarafı DNS için \"SOCKS5\" döndürmesi önerilir. Proxy'yi kapatmak, yeniden başlatmayı gerektirir.",
         "fetchInterval": "Otomatik getirme aralığı",
-        "never": "Asla"
+        "never": "Asla",
+        "minimizeTray": "Sistem tepsisine küçült"
     }
 }

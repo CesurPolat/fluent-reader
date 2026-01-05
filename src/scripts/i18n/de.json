@@ -230,6 +230,7 @@
         "setPac": "PAC-Adresse festlegen",
         "pacHint": "Für SOCKS-Proxies wird empfohlen, für proxy-seitiges DNS im PAC \"SOCKS5\" zurückzugeben. Das Deaktivieren des Proxies erfordert einen Neustart.",
         "fetchInterval": "Automatisches Abrufintervall",
-        "never": "Nie"
+        "never": "Nie",
+        "minimizeTray": "In Systemleiste minimieren"
     }
 }

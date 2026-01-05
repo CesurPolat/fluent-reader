@@ -230,6 +230,7 @@
         "setPac": "PAC instellen",
         "pacHint": "Bij Socks-proxies is het aanbevolen om PAC ‘SOCKS5’ te laten ophalen aan de dns-kant. Herstart om de proxy uit te schakelen.",
         "fetchInterval": "Automatisch ophalen",
-        "never": "Nooit"
+        "never": "Nooit",
+        "minimizeTray": "Minimaliseren naar systeemvak"
     }
 }

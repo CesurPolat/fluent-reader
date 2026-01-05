@@ -230,6 +230,7 @@
         "setPac": " Imposta PAC",
         "pacHint": "Per proxies Socks, è raccomandato per i PAC di ritornare \"SOCKS5\" per proxy-side DNS. Disabilitare i proxy neccessita il riavvio dell'applicazione",
         "fetchInterval": "Ricarica intervallo Automaticamente",
-        "never": "Mai"
+        "never": "Mai",
+        "minimizeTray": "Minimizza nella barra di sistema"
     }
 }

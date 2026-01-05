@@ -230,6 +230,7 @@
         "setPac": "Ange PAC",
         "pacHint": "För Socks-proxyservrar rekommenderas att PAC returnerar \"SOCKS5\" för DNS på proxysidan. Om du stänger av proxyn krävs omstart.",
         "fetchInterval": "Automatiskt hämtningsintervall",
-        "never": "Aldrig"
+        "never": "Aldrig",
+        "minimizeTray": "Minimera till systemfält"
     }
 }
