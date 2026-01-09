@@ -11,6 +11,7 @@ import {
 } from "../schema-types"
 import { ipcMain, session, nativeTheme, app } from "electron"
 import { WindowManager } from "./window"
+import { initializeTray, toggleTray } from "./tray"
 
 export const store = new Store<SchemaTypes>()
 
@@ -204,3 +205,16 @@ ipcMain.on("get-nedb-status", event => {
 ipcMain.handle("set-nedb-status", (_, flag: boolean) => {
     store.set(NEDB_STATUS_STORE_KEY, flag)
 })
+
+const TRAY_STORE_KEY = "trayOn"
+ipcMain.on("get-tray", event => {
+    event.returnValue = store.get(TRAY_STORE_KEY, false)
+})
+ipcMain.handle("toggle-tray", event => {
+    store.set(TRAY_STORE_KEY, !store.get(TRAY_STORE_KEY, false))
+    toggleTray()
+})
+
+export function setTrayListener(manager: WindowManager) {
+    initializeTray(manager, store.get(TRAY_STORE_KEY, false))
+}

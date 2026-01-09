@@ -1,7 +1,7 @@
 import windowStateKeeper = require("electron-window-state")
 import { BrowserWindow, nativeTheme, app } from "electron"
 import path = require("path")
-import { setThemeListener } from "./settings"
+import { setThemeListener, setTrayListener } from "./settings"
 import { setUtilsListeners } from "./utils"
 
 export class WindowManager {
@@ -26,6 +26,7 @@ export class WindowManager {
     private setListeners = () => {
         setThemeListener(this)
         setUtilsListeners(this)
+        setTrayListener(this)
 
         app.on("second-instance", () => {
             if (this.mainWindow !== null) {

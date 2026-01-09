@@ -131,6 +131,13 @@ const settingsBridge = {
     setAll: configs => {
         ipcRenderer.invoke("import-all-settings", configs)
     },
+
+    getTrayStatus: (): boolean => {
+        return ipcRenderer.sendSync("get-tray")
+    },
+    toggleTrayStatus: () => {
+        ipcRenderer.invoke("toggle-tray")
+    },
 }
 
 declare global {

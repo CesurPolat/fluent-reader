@@ -37,6 +37,7 @@ type AppTabState = {
     pacStatus: boolean
     pacUrl: string
     themeSettings: ThemeSettings
+    trayStatus: boolean
     itemSize: string
     cacheSize: string
     deleteIndex: string
@@ -49,6 +50,7 @@ class AppTab extends React.Component<AppTabProps, AppTabState> {
             pacStatus: window.settings.getProxyStatus(),
             pacUrl: window.settings.getProxy(),
             themeSettings: getThemeSettings(),
+            trayStatus: window.settings.getTrayStatus(),
             itemSize: null,
             cacheSize: null,
             deleteIndex: null,
@@ -156,6 +158,14 @@ class AppTab extends React.Component<AppTabProps, AppTabState> {
         })
     }
 
+    toggleTrayStatus = () => {
+        window.settings.toggleTrayStatus()
+        
+        this.setState({
+            trayStatus: window.settings.getTrayStatus(),
+        })
+    }
+
     handleInputChange = event => {
         const name: string = event.target.name
         // @ts-ignore
@@ -195,6 +205,18 @@ class AppTab extends React.Component<AppTabProps, AppTabState> {
                 onChange={this.onThemeChange}
                 selectedKey={this.state.themeSettings}
             />
+
+            <Stack horizontal verticalAlign="baseline">
+                <Stack.Item grow>
+                    <Label>{intl.get("app.minimizeTray")}</Label>
+                </Stack.Item>
+                <Stack.Item>
+                    <Toggle
+                        checked={this.state.trayStatus}
+                        onChange={this.toggleTrayStatus}
+                    />
+                </Stack.Item>
+            </Stack>
 
             <Label>{intl.get("app.fetchInterval")}</Label>
             <Stack horizontal>
