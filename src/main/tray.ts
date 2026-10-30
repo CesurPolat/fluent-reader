@@ -26,7 +26,7 @@ function createTray() {
     tray = new Tray(path.join(__dirname, "../build/icon.png"))
     var contextMenu = Menu.buildFromTemplate([
         {
-            label: "Quit",
+            label: manager.mainWindow.webContents.send("request-translate", "quit") ?? "Quit",
             click: () => {
                 isQuitting = true;
                 manager.mainWindow.close();
